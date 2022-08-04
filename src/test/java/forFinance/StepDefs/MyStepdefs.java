@@ -33,14 +33,13 @@ public class MyStepdefs {
 
     }
 
-    @Given("User is at the Account Page")
+    @Given("User is at the Collections Page")
     public void userIsAtTheAccountPage() {
+    new CollectionsPage().goToCollections();
+    new CollectionsPage().gamePage();
+    }
 
-    }
-    @When("Go to the Game Page")
-    public void goToTheGamePage() {
-    }
-    @And ("Check that Language Dependence Parameter is present on the page")
+    @And("Check that Language Dependence Parameter is present on the page")
     public void checkThatLanguageDependenceParameterIsPresentOnThePage() {
     }
 
@@ -55,6 +54,4 @@ public class MyStepdefs {
     @Then("Compare results with the page")
     public void compareResultsWithThePage() {
     }
-
-
 }

@@ -30,12 +30,24 @@ public class CollectionsPage extends BasePage {
     @FindBy(xpath= "//tbody/tr[1]/td[1]/div[2]/div[1]/div[1]")
     WebElement accInfo;
 
-
     public void checkAcc(){
         Assert.assertTrue(accInfo.getText().contains("MariJeparska"));
     }
 
+    @FindBy (xpath = "//a[contains(text(),'Collection')]")
+    WebElement goToCall;
 
+    public void goToCollections(){
+        accNameButton.click();
+        goToCall.click();
+    }
 
+    @FindBy (xpath = "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[4]/table[1]/tbody[1]/tr[3]/td[1]/div[2]/a[1]")
+    WebElement gamePage;
+
+    public void gamePage(){
+
+        gamePage.click();
+    }
 
 }
