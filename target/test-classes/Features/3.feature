@@ -5,7 +5,6 @@ Feature: API Test and Comparison
     Given User is at the Home Page
     When User is logging in into the website as a "<user>"
     And User is at the Collections Page
-    And Check that Language Dependence Parameter is present on the page
     And Open the Language dependence Window
     And Call API to see the most voted Board game
     Then Compare results with the page

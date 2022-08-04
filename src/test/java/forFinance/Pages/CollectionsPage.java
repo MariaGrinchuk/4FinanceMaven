@@ -50,4 +50,11 @@ public class CollectionsPage extends BasePage {
         gamePage.click();
     }
 
+    @FindBy (xpath = "//body/div[2]/main[1]/div[2]/div[1]/div[1]/div[2]/ng-include[1]/div[1]/div[1]/ui-view[1]/ui-view[1]/div[1]/overview-module[1]/description-module[1]/div[1]/div[2]/div[1]/div[3]/div[2]/div[1]/div[1]/ul[1]/li[1]/div[2]/span[1]/button[1]/span[1]")
+    WebElement voteStatsIcon;
+
+    public void openSTatsWindow() throws InterruptedException {
+        voteStatsIcon.click();
+        Thread.sleep(2000);
+    }
 }

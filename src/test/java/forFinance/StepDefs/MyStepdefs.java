@@ -39,12 +39,9 @@ public class MyStepdefs {
     new CollectionsPage().gamePage();
     }
 
-    @And("Check that Language Dependence Parameter is present on the page")
-    public void checkThatLanguageDependenceParameterIsPresentOnThePage() {
-    }
-
     @And("Open the Language dependence Window")
-    public void openTheLanguageDependenceWindow() {
+    public void openTheLanguageDependenceWindow() throws InterruptedException {
+        new CollectionsPage().openSTatsWindow();
     }
 
     @And("Call API to see the most voted Board game")

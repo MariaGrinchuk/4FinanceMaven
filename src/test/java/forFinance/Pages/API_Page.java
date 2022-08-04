@@ -17,9 +17,6 @@ public class API_Page extends BasePage {
 
     int gameID= 316554;
 
-    @Test
-
-
 
     public void APIcheck(){
 
