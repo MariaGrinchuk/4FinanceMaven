@@ -16,10 +16,10 @@ public class CollectionsPage extends BasePage {
     @FindBy (className = "mygeek-dropdown-username tw-truncate")
     WebElement accButton;
 
-    @FindBy(className = "mygeek-dropdown-username text-truncate ng-binding")
+    @FindBy(xpath = "//span[contains(text(),'MariJeparska')]")
     WebElement accNameButton;
 
-    @FindBy(linkText = "Collection")
+    @FindBy(xpath = "//a[contains(text(),'Profile')]")
     WebElement collectButton;
 
     public void collPage(){
@@ -27,7 +27,7 @@ public class CollectionsPage extends BasePage {
         collectButton.click();
     }
 
-    @FindBy(className= "profile_title")
+    @FindBy(xpath= "//tbody/tr[1]/td[1]/div[2]/div[1]/div[1]")
     WebElement accInfo;
 
 

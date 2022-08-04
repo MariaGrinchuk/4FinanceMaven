@@ -19,7 +19,7 @@ public class LoginPage extends BasePage {
     @FindBy(id = "inputPassword")
     public WebElement enterPassword;
 
-    @FindBy(className = "btn btn-lg btn-primary")
+    @FindBy(xpath = "//button[contains(text(),'Sign In')]")
     public WebElement loginButtonClick;
 
     public void loginToAcc(String username, String password) throws InterruptedException {
@@ -27,9 +27,12 @@ public class LoginPage extends BasePage {
         Thread.sleep(2000);
         enterUsername(username);
         enterPassword(password);
-        loginButtonClick.click();
+
     }
 
+    public void clickEnter(){
+        loginButtonClick.click();
+    }
     public void loginAs(String userType) throws InterruptedException {
         if (userType.equalsIgnoreCase("client")) {
             loginAsClient();
@@ -47,6 +50,7 @@ public class LoginPage extends BasePage {
     }
 
     private void enterPassword(String password) {
+        enterPassword.clear();
         enterPassword.sendKeys(password);
     }
 

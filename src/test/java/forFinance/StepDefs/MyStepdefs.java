@@ -22,6 +22,7 @@ public class MyStepdefs {
     public void userIsLoggingInIntoTheWebsiteAsA(String user) throws InterruptedException{
         new LoginPage().loginAs(user);
         new LoginPage().loginToAcc(ConfigurationReader.get("Username"), ConfigurationReader.get("Password"));
+        new LoginPage().clickEnter();
     }
 
     @Then("User can see his own profile page")
@@ -29,6 +30,7 @@ public class MyStepdefs {
 
         new CollectionsPage().collPage();
         new CollectionsPage().checkAcc();
+
     }
 
     @Given("User is at the Account Page")
