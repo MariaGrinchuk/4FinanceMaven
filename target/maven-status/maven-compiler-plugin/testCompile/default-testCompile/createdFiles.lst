@@ -1,0 +1,9 @@
+forFinance\StepDefs\MyStepdefs.class
+forFinance\Utilities\browserUtils.class
+forFinance\StepDefs\Hooks.class
+forFinance\Pages\LoginPage.class
+forFinance\Runners\FailedTestRunner.class
+forFinance\Utilities\ConfigurationReader.class
+forFinance\Runners\CukesRunner.class
+forFinance\Utilities\Driver.class
+forFinance\Pages\BasePage.class
